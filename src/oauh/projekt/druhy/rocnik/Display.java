@@ -11,11 +11,15 @@ public class Display {
 
             String selectString = "select * from user";
             ResultSet resultSet = statement.executeQuery(selectString);
-            System.out.print("\n" + "Současná tabulka:" + "\n" + "\n");
+            System.out.print("""
+
+                    Current table:
+
+                    """);
             while(resultSet.next()) {
                 System.out.print("Id: " + resultSet.getString("id") + "\n"
-                        + "Jméno: " + resultSet.getString("first_name") + "\n"
-                        + "Příjmení: " +resultSet.getString("last_name") + "\n" + "\n");
+                        + "Name: " + resultSet.getString("first_name") + "\n"
+                        + "Surname: " +resultSet.getString("last_name") + "\n" + "\n");
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);

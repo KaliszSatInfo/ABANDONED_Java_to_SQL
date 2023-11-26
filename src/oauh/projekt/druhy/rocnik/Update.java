@@ -7,7 +7,7 @@ public class Update {
                 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/java_to_sql", "root", "" );
                 Statement statement = connection.createStatement();){
 
-            String Update = "update user set first_name = 'Petr' where id = 1";
+            String Update = "update user set first_name = 'Petr', last_name = 'Novák' where id = 1";
             int countUpdated = statement.executeUpdate(Update);
             System.out.print(countUpdated + " user/s updated." + "\n");
 
