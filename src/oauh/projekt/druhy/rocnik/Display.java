@@ -19,7 +19,7 @@ public class Display {
             while(resultSet.next()) {
                 System.out.print("Id: " + resultSet.getString("id") + "\n"
                         + "Name: " + resultSet.getString("first_name") + "\n"
-                        + "Surname: " +resultSet.getString("last_name") + "\n" + "\n");
+                        + "Surname: " +resultSet.getString("last_name") + "\n");
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
