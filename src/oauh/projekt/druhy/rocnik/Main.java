@@ -1,4 +1,4 @@
-import com.mysql.cj.protocol.Resultset;
+package oauh.projekt.druhy.rocnik;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
