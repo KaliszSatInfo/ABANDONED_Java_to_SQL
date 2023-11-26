@@ -31,7 +31,7 @@ public class Main {
                 printSpace();
             }
         } catch (Exception e){
-            e.printStackTrace();
+            System.err.println("Bo nefunguje ti to chlape");
         }
     }
 }
