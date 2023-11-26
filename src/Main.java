@@ -19,10 +19,13 @@ public class Main {
             ResultSet resultset = statement.executeQuery("select * FROM user");
 
             while (resultset.next()) {
+                System.out.print("id: ");
                 System.out.print(resultset.getString("id"));
                 printSpace();
+                System.out.print("Křestní jméno: ");
                 System.out.print(resultset.getString("first_name"));
                 printSpace();
+                System.out.print("Příjmení: ");
                 System.out.print(resultset.getString("last_name"));
                 printSpace();
                 printSpace();
