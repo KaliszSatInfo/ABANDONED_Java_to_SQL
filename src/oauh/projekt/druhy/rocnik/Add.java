@@ -7,7 +7,7 @@ public class Add {
                 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/java_to_sql", "root", "" );
                 Statement statement = connection.createStatement()){
 
-            String Add = "insert into user values (1, 'test1', 'test1')";
+            String Add = "insert into user values (0, 'test1', 'test1')";
             int countAdded = statement.executeUpdate(Add);
             System.out.print(countAdded + " user/s added.\n");
 
